@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/ico.svg" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <!-- Fonst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/components/search.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <link rel="stylesheet" href="../assets/css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/components/button.css">
+    <link rel="stylesheet" href="../assets/css/components/formulario.css">
+    <link rel="stylesheet" href="../assets/css/components/card.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <title>AluraGeek | Productos</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="search">
+                <a href="../index.html"><img class="header__logo" src="../assets/img/logo.png"
+                        alt="Logo Alura Geek"></a>
+                <div class="search__display">
+                    <input class="search__input" type="search" placeholder="¿Qué deseas buscar?" id="searchInput"
+                        data-search>
+                    <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+                </div>
+            </div>
+
+            <div class="search__mobile">
+                <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="search-find hidden" data-find></div>
+        <div class="producto__elegido" id="productoElegido"></div>
+        <section class="section">
+            <div class="section__header section__header--mobile">
+                <div>
+                    <h3 class="section__title">Todos los productos</h3>
+                </div>
+                <div class="section__more">
+                    <button class="btn__agregar" id="enviar"><a class="btn__agregar--a"
+                            href="./agregarProductos.html">Agregar
+                            productos</a></button>
+                </div>
+            </div>
+            <section class="section">
+                <div class="card__container-productos" datos-productos></div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__tablet">
+                <div class="logo__footer">
+                    <img class="logo__footer-img" src="../assets/img/Logo.png" alt="Logo Alura Geek">
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__menu-ul">
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quienes somos</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Política de privacidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Programa de fidelidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Nuestras tiendas</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quiero ser franquiciado</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Anúncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <h2 class="contacto__title">Hable con nosotros</h2>
+                <form action="#" class="formulario footer-form" data-form-footer>
+                    <div class="input-container">
+                        <input name="name" id="nombre" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" id="message" class="input input-textarea"
+                            placeholder="Escribe tu mensaje" required data-tipo="mensaje" maxlength="300"></textarea>
+                        <label class="input-label" for="message">Mensaje</label>
+
+                    </div>
+                    <button class="btn" id="enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="rodapie">
+            <p class="rodapie__p">&copy; Copyright 2022 - Desarrollado por <a
+                    href="https://github.com/ayelenleclerc">Ayelen
+                    Leclerc <i class="fi fi-brands-github"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+    <!-- <script type="module" src="../controllers/search-controller.js"></script> -->
+    <script type="module" src="../controllers/productos-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/ico.svg" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <!-- Fonst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/components/search.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <link rel="stylesheet" href="../assets/css/components/button.css">
+    <link rel="stylesheet" href="../assets/css/components/formulario.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <title>AluraGeek | Agregar productos</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="search">
+                <a href="../index.html"><img class="header__logo" src="../assets/img/Logo.png"
+                        alt="Logo Alura Geek"></a>
+                <div class="search__display">
+                    <input class="search__input" type="search" placeholder="¿Qué deseas buscar?" id="searchInput"
+                        data-search>
+                    <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+                </div>
+            </div>
+            <button class="btn__login btn__admin" type="button" id="login"><a class="btn__login--a"
+                    href="./homeLogin.html">Menú
+                    Administrativo</a></button>
+            <div class="search__mobile">
+                <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="search-find hidden" data-find></div>
+        <div class="form__title agregar__producto">
+            <h3>Agregar nuevo producto</h3>
+        </div>
+        <div class="form__container">
+            <form action="./productos.html" class="formulario" data-form-producto>
+                <div class="input-container">
+                    <input name="img" id="img" class="input" type="text" placeholder="URL" data-tipo="img" required
+                        pattern="([^ \\ s] + (\\. (? i) (jpe? g | png)) $)" />
+                    <label class="input-label" for="img">URL de la imágen</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="categoria" id="categoria" class="input" type="text" placeholder="Categoría"
+                        data-tipo="categoria" required pattern="[\s\S]{4,10}" />
+                    <label class=" input-label" for="categoria">Categoría</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre del producto"
+                        data-tipo="nombre" required pattern="[\s\S]{4,20}" />
+                    <label class="input-label" for="nombre">Nombre</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="precio" id="precio" class="input" type="text" placeholder="Precio del producto"
+                        data-tipo="precio" pattern="/($[0-9,])(.[0-9]{2})?)/" />
+                    <label class="input-label" for="precio">Precio</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container ">
+                    <div class="input-container">
+                        <textarea name="descripcion" id="descripcion" class="input input-textarea" type="text"
+                            placeholder="Descripción del producto" required data-tipo="descripcion" required
+                            pattern="[\s\S]{4,300}">
+                        </textarea>
+                        <label class="input-label" for="descripcion">Descripción</label>
+                    </div>
+                    <button class="btn__form">Agregar producto</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__tablet">
+                <div class=" logo__footer">
+                    <img class="logo__footer-img" src="../assets/img/Logo.png" alt="Logo Alura Geek">
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__menu-ul">
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quienes somos</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Política de privacidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Programa de fidelidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Nuestras tiendas</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quiero ser franquiciado</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Anúncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <h2 class="contacto__title">Hable con nosotros</h2>
+                <form action="#" class="formulario footer-form" data-form-footer>
+                    <div class="input-container">
+                        <input name="name" id="nombre" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" id="message" class="input input-textarea"
+                            placeholder="Escribe tu mensaje" required data-tipo="mensaje" maxlength="300"></textarea>
+                        <label class="input-label" for="message">Mensaje</label>
+
+                    </div>
+                    <button class="btn" id="enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="rodapie">
+            <p class="rodapie__p">&copy; Copyright 2022 - Desarrollado por <a
+                    href="https://github.com/ayelenleclerc">Ayelen
+                    Leclerc <i class="fi fi-brands-github"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="../js/registro-productos.js"></script>
+</body>
+
+</html>

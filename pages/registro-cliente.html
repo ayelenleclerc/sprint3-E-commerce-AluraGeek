@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/ico.svg" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <!-- Fonst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/components/search.css">
+    <link rel="stylesheet" href="../assets/css/usuarios.css">
+    <link rel="stylesheet" href="../assets/css/components/button.css">
+    <link rel="stylesheet" href="../assets/css/components/formulario.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <title>AluraGeek | Registro</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="search">
+                <a href="../index.html"><img class="header__logo" src="../assets/img/Logo.png"
+                        alt="Logo Alura Geek"></a>
+                <div class="search__display">
+                    <input class="search__input" type="search" placeholder="¿Qué deseas buscar?" id="searchInput"
+                        data-search>
+                    <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+                </div>
+            </div>
+
+            <div class="search__mobile">
+                <span><img src="../assets/img/search.svg" alt="Buscar"></span>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="search-find hidden" data-find></div>
+        <div class="form__title">
+            <h3>Nuevo cliente</h3>
+        </div>
+        <div class="form__container">
+            <form class="formulario" data-form-alta>
+                <fieldset>
+                    <legend class="form__label">Información básica</legend>
+                    <div class="input-container">
+                        <input name="nombre" id="nombre" class="input" type="text" placeholder="Nombre" required
+                            title="Nombre completo" data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre completo</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required
+                            title="ejemplo@ejemplo.com / ejemplo@ejemplo.com.ar" data-tipo="email">
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña"
+                            required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!=.*[ !@#$%^&*_=+-]).{6,12}$"
+                            title="Debe contener al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales"
+                            data-tipo="password">
+                        <label class="input-label" for="password">Contraseña</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form__label">Información personal</legend>
+                    <div class="input-container">
+                        <input name="nacimiento" id="nacimiento" class="input" type="date"
+                            placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+                        <label class="input-label" for="nacimiento">Fecha de nacimiento</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="telefono" id="telefono" class="input" type="text" placeholder="Número telefónico"
+                            required data-tipo="telefono" pattern="\d{10}" maxlength="10" minlength="10">
+                        <label class="input-label" for="telefono">Número telefónico</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form__label">Dirección</legend>
+                    <div class="input-container">
+                        <input name="direccion" id="direccion" class="input" type="text" placeholder="Dirección"
+                            required data-tipo="direccion" pattern="[\s\S]{10,40}">
+                        <label class="input-label" for="direccion">Dirección completa</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="ciudad" id="ciudad" class="input" type="text" placeholder="Ciudad" required
+                            data-tipo="ciudad" pattern="[\s\S]{4,50}">
+                        <label class="input-label" for="ciudad">Ciudad</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="provincia" id="provincia" class="input" type="text" placeholder="Provincia"
+                            required data-tipo="provincia" pattern="[\s\S]{4,50}">
+                        <label class="input-label" for="provincia">Provincia</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <div class="aceptacion-container">
+                    <p class="aceptacion-container__parrafo">** Al hacer click en el botón Registrarse<br /> Ud.
+                        ACEPTA
+                        los
+                        Términos y Condiciones<br />
+                        Sus datos serán resguardados de acuerdo a las Políticas de Protección de Datos</p>
+                </div>
+                <button class="btn__form">Registrarse</button>
+                <div class="registro-login">
+                    <p class="registro-login__parrafo">¿Ya tiene una cuenta?<a class="registro-login__a"
+                            href="./homeLogin.html">Iniciar sesión</a></p>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__tablet">
+                <div class=" logo__footer">
+                    <img class="logo__footer-img" src="../assets/img/Logo.png" alt="Logo Alura Geek">
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__menu-ul">
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quienes somos</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Política de privacidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Programa de fidelidad</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Nuestras tiendas</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Quiero ser franquiciado</a></li>
+                        <li class="footer__menu-li"><a class="footer__menu-a" href="#">Anúncie aquí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <h2 class="contacto__title">Hable con nosotros</h2>
+                <form action="#" class="formulario footer-form" data-form-footer>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
+                            data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="message" id="message" class="input input-textarea"
+                            placeholder="Escribe tu mensaje" required data-tipo="mensaje" maxlength="300"></textarea>
+                        <label class="input-label" for="message">Mensaje</label>
+
+                    </div>
+                    <button class="btn" id="enviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="rodapie">
+            <p class="rodapie__p">&copy; Copyright 2022 - Desarrollado por <a
+                    href="https://github.com/ayelenleclerc">Ayelen
+                    Leclerc <i class="fi fi-brands-github"></i></a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="../js/registro-usuarios.js"></script>
+</body>
+
+</html>

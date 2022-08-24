@@ -1,0 +1,12 @@
+@import url(_reset.css);
+@import url(_variables.css);
+
+body {
+  background-color: var(--bg-general);
+  font-family: var(--font-family-body);
+  overflow-x: hidden;
+}
+
+.hidden{
+    display:none;
+}

@@ -1,0 +1,183 @@
+{
+  "producto": [
+    {
+      "id": "8cb91471-6f85-4ac8-be6b-76c503041c0b",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225015/Alura-E-Commerce/starwars1_fyywo6.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Taza Troopers",
+      "precio": "$60.00",
+      "descripcion": "Taza impresa en 3D, resistencia al calor, no apta para microondas."
+    },
+    {
+      "id": "ca7d3d48-d36f-45e4-9e11-158ed83abd6f",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225015/Alura-E-Commerce/starwars2_gpgevg.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Adorno Darth Vader",
+      "precio": "$60.00",
+      "descripcion": "Escultura impresa en 3D Darth Vader. Ideal regalo de cumpleaños para un Fan!"
+    },
+    {
+      "id": "4ab172b3-9be6-416b-af42-f891695605a3",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225015/Alura-E-Commerce/starwars3_vmpewp.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Yoda 3D",
+      "precio": "$60.00",
+      "descripcion": "Escultura Yoda 3D. Ideal para fanáticos de la saga."
+    },
+    {
+      "id": "d0dc1e6d-5fcc-48f1-902e-2f9fa1dbb862",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225015/Alura-E-Commerce/starwars4_peqkde.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Poster Trooper",
+      "precio": "$60.00",
+      "descripcion": "Poster de Trooper de 100 cm x 80cm, laminado."
+    },
+    {
+      "id": "10debaf2-5932-4f02-9851-1603180dc2e0",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225016/Alura-E-Commerce/starwars5_ethk3g.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Yoda bebé",
+      "precio": "$60.00",
+      "descripcion": "Yoda bebé. Importado de EEUU. Canta, baila y da consejos jedi"
+    },
+    {
+      "id": "695147ad-d814-47e4-8be4-644d3417686c",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225015/Alura-E-Commerce/starwars6_yveylx.jpg",
+      "categoria": "Star Wars",
+      "nombre": "Darth Vader",
+      "precio": "$60.00",
+      "descripcion": "Muñeco de Darth Vader original. Importando. Habla y camina."
+    },
+    {
+      "id": "5ff0bb8a-4f8f-4f5b-b4d9-14f2f9ee4953",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas1_pcqcd5.jpg",
+      "categoria": "Consolas",
+      "nombre": "Joystick Blanco",
+      "precio": "$60.00",
+      "descripcion": "Joystick Xbox color blanco."
+    },
+    {
+      "id": "da6b2271-ec8a-453f-9e2e-9c185b65223f",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas2_g2geba.jpg",
+      "categoria": "Consolas",
+      "nombre": "Xbox One",
+      "precio": "$60.00",
+      "descripcion": "Consola Xbox One 128gb, Color negro con 5 juegos a elección, 2 joystick "
+    },
+    {
+      "id": "3de38cab-9818-477b-8a56-19ecc2461dfe",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas3_xplzwd.jpg",
+      "categoria": "Consolas",
+      "nombre": "Nintendo",
+      "precio": "$60.00",
+      "descripcion": "Consola de Nintendo Vintage"
+    },
+    {
+      "id": "3bfebf9b-1f2f-4420-b262-8aeb296408f3",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas4_ye4tes.jpg",
+      "categoria": "Consolas",
+      "nombre": "Joystick Nintendo",
+      "precio": "$60.00",
+      "descripcion": "Joystick Nintendo, colores a elección."
+    },
+    {
+      "id": "9b841e28-3df0-488d-aa8a-25e7810dd490",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas5_makfde.jpg",
+      "categoria": "Consolas",
+      "nombre": "Nintendo Black One",
+      "precio": "$60.00",
+      "descripcion": "Consola Nintendo Black One última generación. 256gb + 2 joystick + 10 juegos a elección."
+    },
+    {
+      "id": "a231b4f2-b85b-4954-be23-911a2a9dae1e",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/consolas6_v4zk5l.jpg",
+      "categoria": "Consolas",
+      "nombre": "Juego Portatil",
+      "precio": "$60.00",
+      "descripcion": "Juego Portatil al estilo Nintendo con 3 cartuchos de juegos a elección."
+    },
+    {
+      "id": "23724b06-bea4-43c7-b49e-1bdf61bbe5b7",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos1_id9ixl.jpg",
+      "categoria": "Diversos",
+      "nombre": "Camisa Atari",
+      "precio": "$60.00",
+      "descripcion": "Camisa Atari original. Varios talles"
+    },
+    {
+      "id": "92e2c88e-db96-4183-92b5-fa1d6458c0e4",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos2_apbwvi.jpg",
+      "categoria": "Diversos",
+      "nombre": "Camisa SNES",
+      "precio": "$60.00",
+      "descripcion": "Camisa SNES Original. Varios talles. Decada de los ´90"
+    },
+    {
+      "id": "9f1c141d-a49c-4926-a940-9b13d5eb2748",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos3_kj8bby.jpg",
+      "categoria": "Diversos",
+      "nombre": "Muñeco Sonic",
+      "precio": "$60.00",
+      "descripcion": "Muñecos originales de Sonic. Vintage Collection"
+    },
+    {
+      "id": "f88163f4-7339-46cb-9a48-081e74b2e4be",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos4_dia9z8.jpg",
+      "categoria": "Diversos",
+      "nombre": "Radio Vintage",
+      "precio": "$60.00",
+      "descripcion": "Radio-despertador Vintage con radio AM y FM "
+    },
+    {
+      "id": "bac51961-72e7-4c57-a6ab-e18afb2cc5fd",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225013/Alura-E-Commerce/diversos5_h7bs7l.jpg",
+      "categoria": "Diversos",
+      "nombre": "Lentes 3D",
+      "precio": "$60.00",
+      "descripcion": "Lentes 3D para simulación de Realidad Virtual"
+    },
+    {
+      "id": "79de5dd3-b6da-4e11-9e3b-3fe0c25ef996",
+      "img": "https://res.cloudinary.com/ayelenleclerc/image/upload/v1660225014/Alura-E-Commerce/diversos6_u74lqo.jpg",
+      "categoria": "Diversos",
+      "nombre": "Pikachu",
+      "precio": "$60.00",
+      "descripcion": "Muñeco de peluche de Pikachu"
+    }
+  ],
+  "usuario": [
+    {
+      "id": "bbb44fc6-7372-47cd-bfcd-95be7379729f",
+      "nombre": "Admin",
+      "email": "admin@admin.com",
+      "password": "Admin1234",
+      "nacimiento": "2001-01-01",
+      "telefono": "1133445566",
+      "direccion": "Calle Falsa 123",
+      "ciudad": "Capital Federal",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+      "id": "0efaefad-05f8-4d0a-8167-1df8511d6c8d",
+      "nombre": "Ayelen Tatiana Leclerc",
+      "email": "ayelenleclerc@gmail.com",
+      "password": "Admin1234",
+      "nacimiento": "1982-07-06",
+      "telefono": "1133749360",
+      "direccion": "Carhue 583",
+      "ciudad": "Liniers",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
+    },
+    {
+      "id": "bcb2d9c0-4df4-452d-a233-6744b25e909d",
+      "nombre": "Christian Bescos",
+      "email": "christian_2011@hotmail.com.ar",
+      "password": "Kiara1307",
+      "nacimiento": "1973-10-15",
+      "telefono": "1153039115",
+      "direccion": "Carhue 583",
+      "ciudad": "Liniers",
+      "provincia": "Ciudad Autónoma de Buenos Aires"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-general);
+    padding: 2rem 7rem;
+
+}
+.header__logo {
+    padding: 0 15px 0 0;
+}
+@media (min-width: 320px) and (max-width: 767px){
+      .header__top {
+        padding: 2rem 2rem;
+    }
+
+    .header__logo {
+        width: 6.25rem;
+        height: 28px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+     .header__top {
+        padding: 2rem 2rem;
+    }
+    
+    .header__logo {
+        width: 10.25rem;
+    }
+
+
+}

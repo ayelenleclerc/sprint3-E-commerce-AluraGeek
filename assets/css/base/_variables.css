@@ -1,0 +1,25 @@
+:root {
+    --font-family-body: 'Raleway',sans-serif;
+
+    --bg-general: #FFFFFF;
+    --bg-footer: #EAF2FD;
+    --bg-buscador: #F5F5F5;
+   
+    --color-primario: #464646;
+    --color-secundario: #2A7AE4;
+    --font-search: #9B9B9B;
+
+    
+    --font-weigth-input: 300;
+    --font-size-card-title: 28px;
+    --font-size-input-label: 20px;
+    --font-size-form-fieldset: 22px;
+
+    --section-img-width: 13px;
+
+    --card-width-img: 176px;
+    --card-height-img: 174px;
+
+    --warning-color: #df2525;
+    --success-color: #047900;
+}
